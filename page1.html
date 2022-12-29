@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Pumkin</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="/path/to/phaser-virtual-joystick.js"></script>
+    <script src="assets/js/pumkin.js"></script>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width:800px) {
+            body {
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+                /* position:absolute; */
+                /* top: -800;  */
+                /* left:0; */
+            }
+        }
+
+        #version {
+            position: absolute;
+            left: 5px;
+            top: 605px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="game-canvas"></canvas>
+    <div id=version></div>
+</body>
+
+</html>
